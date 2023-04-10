@@ -1,5 +1,8 @@
 package hello.core.order;
 
+import lombok.ToString;
+
+@ToString
 public class Order {
     private Long memberId;
     private String itemName;
@@ -47,15 +50,5 @@ public class Order {
 
     public void setDiscountPrice(int discountPrice) {
         this.discountPrice = discountPrice;
-    }
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "memberId=" + memberId +
-                ", itemName='" + itemName + '\'' +
-                ", itemPrice=" + itemPrice +
-                ", discountPrice=" + discountPrice +
-                '}';
     }
 }
